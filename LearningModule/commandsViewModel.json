@@ -1,0 +1,131 @@
+{
+    "commands": {
+        "cmdChild": {
+            "iconId": "cmdChild",
+            "title": "{{i18n.cmdChildTitle}}"
+        },
+        "TestToolsAndInfo": {
+            "iconId": "cmdClearText",
+            "title": "{{i18n.TestToolsAndInfoTitle}}"
+        },
+        "BabuRao": {
+            "iconId": "cmd07BlueGlossyPlastic",
+            "title": "{{i18n.BabuRaoTitle}}"
+        },
+        "Test1234": {
+            "iconId": "cmd11BrownGlossyPlastic",
+            "title": "{{i18n.Test1234Title}}"
+        }
+    },
+    "commandHandlers": {
+        "cmdChildHandler": {
+            "id": "+",
+            "action": "activatecmdChild",
+            "activeWhen": true,
+            "visibleWhen": {
+                "condition": "conditions.test"
+            }
+        },
+        "TestToolsAndInfoHandler": {
+            "id": "TestToolsAndInfo",
+            "action": "activateTestToolsAndInfo",
+            "activeWhen": true,
+            "visibleWhen": {
+                "condition": "conditions.true"
+            }
+        },
+        "BabuRaoHandler": {
+            "id": "BabuRao",
+            "action": "activateBabuRao",
+            "activeWhen": true,
+            "visibleWhen": {
+                "condition": "conditions.true"
+            }
+        },
+        "Test1234Handler": {
+            "id": "Test1234",
+            "action": "activateTest1234",
+            "activeWhen": true,
+            "visibleWhen": {
+                "condition": "conditions.true"
+            }
+        }
+    },
+    "commandPlacements": {
+        "cmdChildaw_oneStep": {
+            "id": "cmdChild",
+            "uiAnchor": "aw_oneStep",
+            "priority": 100
+        },
+        "TestToolsAndInfoaw_toolsAndInfo": {
+            "id": "TestToolsAndInfo",
+            "uiAnchor": "aw_toolsAndInfo",
+            "priority": 100
+        },
+        "BabuRaoBlueGlossyPlastic": {
+            "id": "BabuRao",
+            "uiAnchor": "BlueGlossyPlastic",
+            "priority": 100
+        },
+        "Test1234aw_toolsAndInfo": {
+            "id": "Test1234",
+            "uiAnchor": "aw_toolsAndInfo",
+            "priority": 100
+        }
+    },
+    "actions": {
+        "activatecmdChild": {
+            "actionType": "JSFunction",
+            "method": "alert",
+            "deps": "js/cmdChildService",
+            "inputData": {
+                "text": "Hello cmdChild!"
+            }
+        },
+        "activateTestToolsAndInfo": {
+            "actionType": "JSFunction",
+            "method": "activateCommandPanel",
+            "deps": "js/commandPanel.service",
+            "inputData": {
+                "commandId": "TestToolsAndInfo",
+                "location": "aw_toolsAndInfo"
+            }
+        },
+        "activateBabuRao": {
+            "actionType": "JSFunction",
+            "method": "alert",
+            "deps": "js/BabuRaoService",
+            "inputData": {
+                "text": "Hello BabuRao!"
+            }
+        },
+        "activateTest1234": {
+            "actionType": "JSFunction",
+            "method": "activateCommandPanel",
+            "deps": "js/commandPanel.service",
+            "inputData": {
+                "commandId": "Test1234",
+                "location": "aw_toolsAndInfo"
+            }
+        }
+    },
+    "conditions": {
+        "test": {
+            "expression": "ctx.mselected.lenght > 1"
+        }
+    },
+    "i18n": {
+        "cmdChildTitle": [
+            "LearningModuleMessages"
+        ],
+        "TestToolsAndInfoTitle": [
+            "LearningModuleMessages"
+        ],
+        "BabuRaoTitle": [
+            "LearningModuleMessages"
+        ],
+        "Test1234Title": [
+            "LearningModuleMessages"
+        ]
+    }
+}

@@ -1,0 +1,112 @@
+{
+    "schemaVersion": "1.0.0",
+    "imports": [
+        "js/aw-button.directive",
+        "js/aw-checkbox.directive",
+        "js/aw-command-panel.directive",
+        "js/aw-i18n.directive",
+        "js/aw-panel-body.directive",
+        "js/aw-panel-footer.directive",
+        "js/aw-panel-header.directive",
+        "js/aw-panel-section.directive",
+        "js/aw-label.directive",
+        "js/visible-when.directive",
+        "js/aw-textbox.directive"
+    ],
+    "actions": {
+        "showExample": {
+            "actionType": "TcSoaService",
+            "serviceName": "Core-2008-06-DataManagement",
+            "method": "createObjects",
+            "inputData": {
+          "input": [
+            {
+                "clientId": "xyz",
+                "data":
+                {
+                    "boName": "Item",
+                    "stringProps":                            
+                    {
+                       "object_name": "{{data.box4.uiValue}}"
+                       
+                       
+                    }
+                }}]
+            },
+            "outputData":
+            {
+                "createdObjectUid": "output[0].objects[0].uid"
+            }
+        }
+    },
+    "data": {
+        "check": {
+            "displayName": "{{i18n.checkBoxName}}",
+            "type": "BOOLEAN",
+            "isRequired": "true",
+            "vertical": true,
+            "dbValue": false
+        },
+        "text": {
+            "type": "STRING",
+            "uiValue": "{{i18n.textValue}}"
+        },
+        "box1": {
+         "displayName": "{{i18n.label1Name}}",
+         "type": "STRING",
+         "isRequired": "false",
+         "isEditable": "true",
+         "dbValue": "Test_Value"
+      },
+       "box2": {
+         "displayName": "{{i18n.label2Name}}",
+         "type": "STRING",
+         "isRequired": "false",
+         "isEditable": "true",
+         "dbValue": "Test_Value"
+      },
+       "box3": {
+         "displayName": "{{i18n.label3Name}}",
+         "type": "STRING",
+         "isRequired": "false",
+         "isEditable": "true",
+         "dbValue": "Test_Value"
+      },
+      "box4": {
+         "type": "STRING",
+         "isRequired": "false",
+         "isEditable": "true",
+         "dbValue": "Default String",
+         "dispValue": "Default String"
+      },
+         "box5": {
+         "type": "STRING",
+         "isRequired": "false",
+         "isEditable": "true",
+         "dbValue": "Default String",
+         "dispValue": "Default String"
+      },
+      "box6": {
+        "type": "STRING",
+        "isRequired": "false",
+        "isEditable": "true",
+        "dbValue": "Default String",
+        "dispValue": "Default String"
+     }
+    },
+    "i18n": {
+        "TestToolsAndInfoTitle": [ "LearningModuleMessages" ],
+        "header": [ "LearningModuleMessages" ],
+        "body": [ "LearningModuleMessages" ],
+        "footer": [ "LearningModuleMessages" ],
+        "save": [ "LearningModuleMessages" ],
+        "checkBoxName": [ "LearningModuleMessages" ],
+        "textValue": [ "LearningModuleMessages" ],
+        "label1Name": [ "LearningModuleMessages" ],
+        "label2Name": [ "LearningModuleMessages" ],
+        "label3Name": [ "LearningModuleMessages" ],
+        "textbox1Name": [ "LearningModuleMessages" ],
+        "textbox2Name": [ "LearningModuleMessages" ]
+
+    }
+}

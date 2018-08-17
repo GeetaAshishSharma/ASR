@@ -1,0 +1,50 @@
+{
+    "tp": {
+        "data": {
+            "browserTitle": {
+                "source": "/i18n/LearningModuleMessages",
+                "key": "tpBrowserTitle"
+            },
+            "browserSubTitle": {
+                "source": "/i18n/LearningModuleMessages",
+                "key": "tpBrowserSubTitle"
+            },
+            "headerTitle": {
+                "source": "/i18n/LearningModuleMessages",
+                "key": "tpHeaderTitle"
+            }
+        },
+        "type": "location"
+    },
+    "tp1": {
+        "controller": "NativeSubLocationCtrl",
+        "data": {
+            "priority": 0,
+            "label": {
+                "source": "/i18n/LearningModuleMessages",
+                "key": "tp1Title"
+            },
+            "clientScopeURI": "Awp0SearchResults",
+            "nameToken": "tp1",
+            "context": {
+                "search": {
+                    "chartTitle": {
+                        "source": "/i18n/LearningModuleMessages",
+                        "key": "tp1ChartTitle"
+                    }
+                }
+            }
+        },
+        "dependencies": [
+            "js/aw.native.sublocation.controller"
+        ],
+        "params": {
+            "filter": null
+        },
+        "parent": "showGatewayLocation",
+        "reloadOnSearch": false,
+        "templateUrl": "/html/aw.native.sublocation.html",
+        "type": "subLocation",
+        "url": "/tp1"
+    }
+}

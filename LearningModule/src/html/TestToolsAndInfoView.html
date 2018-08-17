@@ -1,0 +1,31 @@
+<aw-command-panel caption="i18n.TestToolsAndInfoTitle">
+    <aw-panel-header>
+        <aw-panel-section caption="i18n.header" >
+            <aw-label prop="data.box1" ></aw-label>
+            <aw-textbox prop="data.box4"></aw-textbox>
+             <aw-break></aw-break>
+            <aw-label prop="data.box2" ></aw-label>
+            <aw-textbox prop="data.box5"></aw-textbox>
+             <aw-break></aw-break>
+            <aw-label prop="data.box3" ></aw-label>
+            <aw-textbox prop="data.box6"></aw-textbox>
+             <aw-break></aw-break>
+            <aw-checkbox prop="data.check"></aw-checkbox>
+            <aw-break></aw-break>
+        </aw-panel-section>
+    </aw-panel-header>
+    <aw-panel-body>
+        <!-- <aw-panel-section caption="i18n.body">
+            <aw-label prop="data.text"></aw-label>
+        </aw-panel-section> -->
+
+        <aw-break></aw-break>     <aw-break></aw-break>
+    </aw-panel-body>
+    <aw-panel-footer>
+        <aw-panel-section>
+            <aw-button action="showExample" visible-when="data.check.dbValue === true">
+                <aw-i18n>i18n.save</aw-i18n>
+            </aw-button>
+        </aw-panel-section>
+    </aw-panel-footer>
+</aw-command-panel>

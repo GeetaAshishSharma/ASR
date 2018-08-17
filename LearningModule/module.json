@@ -1,0 +1,8 @@
+{
+    "name": "LearningModule",
+    "desc": "This is the LearningModule module",
+    "type": [
+        "native"
+    ],
+    "skipTest": true
+}

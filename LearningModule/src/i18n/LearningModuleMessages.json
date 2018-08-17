@@ -1,0 +1,22 @@
+{
+    "header": "Header",
+    "body": "Body",
+    "footer": "Footer",
+    "checkBoxName": "Enable the OK button",
+    "save": "Ok",
+    "textValue": "Contents here",
+    "cmdChildTitle": "cmdChild",
+    "TestToolsAndInfoTitle": "TestToolsAndInfo",
+    "label1Name": "Name ",
+    "label2Name": "Address ",
+    "label3Name": "Gender ",
+    "textbox1Name": "Enter String value in Textbox",
+    "textbox2Name": "Gender ",
+    "tpHeaderTitle": "tp",
+    "tpBrowserTitle": "tp",
+    "tpBrowserSubTitle": "tp",
+    "tp1Title": "tp1",
+    "tp1ChartTitle": "tp1",
+    "BabuRaoTitle": "BabuRao",
+    "Test1234Title": "Test1234"
+}
